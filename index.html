@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/matter.js"></script>
+    <script src="libraries/p5.play.js"></script>
+
+ <!-- Database Start -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAX6rIWf3UxSm9zGmrDUi7C4kJ7OD_KPpA",
+    authDomain: "tic-tac-toe-35f13.firebaseapp.com",
+    databaseURL: "https://tic-tac-toe-35f13-default-rtdb.firebaseio.com",
+    projectId: "tic-tac-toe-35f13",
+    storageBucket: "tic-tac-toe-35f13.appspot.com",
+    messagingSenderId: "644091106539",
+    appId: "1:644091106539:web:47d9dae8d7dc3c4c2b9aae"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+ <!-- Database over -->
+    
+ <!--Add Your JS files here -->
+    <script src="js/player.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+   
+    <script src="sketch.js"></script>
+    <table id="table">
+     
+        <tr>
+            <td id="r1" onclick="printx('1')"></td>
+            <td id="r2" onclick="printx('2')"></td>
+            <td id="r3" onclick="printx('3')"></td>
+        </tr>
+        <tr>
+            <td id="r4" onclick="printx('4')"></td>
+            <td id="r5" onclick="printx('5')"></td>
+            <td id="r6" onclick="printx('6')"></td>
+        </tr>
+         <tr>
+            <td id="r7" onclick="printx('7')"></td>
+            <td id="r8" onclick="printx('8')"></td>
+            <td id="r9" onclick="printx('9')"></td>
+        </tr>
+        
+    </table>
+
+</body>
+</html>
